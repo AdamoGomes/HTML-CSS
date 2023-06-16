@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <style>
+        /*
+        Seletores personalizados
+        #  = id
+        .  = class
+        :  = pseudoclass
+        :: = pseudoelement
+        >  = children
+        */
+        body{
+            font-family: sans-serif;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .corinthians::after{
+            content: ' ⇚';
+        }
+        .corinthians::before{
+            content: '⇛ ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+    <ul>
+        <li><a href="https://www.corinthians.com.br/" target="_blank" class="corinthians">Site do Corinthians</a></li>
+        <li><a href="https://www.racingclub.com.ar/" target="_blank">Site do Racing</a></li>
+        <li><a href="https://www.bvb.de/" target="_blank">Site do BVB</a></li>
+        <li><a href="http://www.saopaulofc.net/" target="_blank">Site do São Paulo</a></li>
+    </ul>
+</body>
+</html>

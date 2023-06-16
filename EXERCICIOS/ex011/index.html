@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <H1>Imagens Dinamicas</H1>
+    <p>Tente abrir esse site em dispositivos diferentes, ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture> <!-- Permite a criação de varios sources -->
+        <source media="(max-width: 730px)" srcset="imagens/foto-p.png" type="image/png"><!-- A imagem menor tem necessariamente que ser acima da maior. Caso seja (min-width:) a maior em cima -->
+        <source media="(max-width: 1030px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <p><strong>GuanaCast - Episodio 33</strong></p>
+    <audio src="midia/guanacast-33.mp3" controls></audio>
+    <!-- MP3 M4A WAV OGG -->
+    <p><strong>Audio que fiz no microfone</strong></p>
+    <audio preload="metadata" controls>
+        <source src="midia/tosse.m4a" type="audio/wav"> <!-- m4a o type é audio/wav. E evite por audios wav na pagina pois eles sao muito pesados -->
+        <p>Infelizmente nao foi possivel carregar o audio</p>
+    </audio>
+</body>
+</html>

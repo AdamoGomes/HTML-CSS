@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgb(202, 202, 202);
+            margin: 0px;
+        }
+        nav {
+            border-radius: 4px;
+            text-align: center;
+            background-color: rgb(41, 41, 41);
+            /*
+            sombra-horizonta / sombra-vertical / espalhamento / cor
+            */
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.356);
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        header{
+            border-radius: 10px 0px;
+            text-align: center;
+            background-color: rgb(119, 119, 119);
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            border-radius: 10px 0px;
+            background-color: rgb(153, 153, 153);
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            padding: 10px;
+            background-color: rgb(185, 185, 185);
+        }
+        article > aside {
+            background-color: rgb(131, 131, 131);
+        }
+        footer{
+            background-color: rgb(27, 27, 27);
+            color: snow;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px auto 0px auto;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium in tenetur, cupiditate est ducimus ipsa voluptatem. Nihil rem atque incidunt fugiat suscipit, fuga aperiam accusantium labore repellat officia saepe.</p>
+                <aside>
+                    Escrito por Adamo Mnagabeira
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>@_batmangeira</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
