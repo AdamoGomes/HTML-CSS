@@ -73,7 +73,6 @@ hr{
     text-align: center;
 }
 #video{
-    background-color: white;
     position: relative;
     height: 400px;
 }
@@ -103,7 +102,6 @@ hr{
     position: block;
     padding: 10px;
     margin: 0px auto;
-    background-color: var(--corcinza);
     max-width: 800px;
     min-width: 320px;
     height: auto;
