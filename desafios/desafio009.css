@@ -73,11 +73,12 @@ hr{
     text-align: center;
 }
 #video{
-    position: relative;
+    display: flex;
+    justify-content: center;
     height: 300px;
 }
 #video > iframe{
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
