@@ -106,6 +106,7 @@ main{
     margin: 0px;
 }
 #navegação{
+    background-color: var(--corcinza);
     max-width: 800px;
     min-width: 320px;
 }
