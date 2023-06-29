@@ -34,6 +34,7 @@ header > p{
     border: 1px solid black;
     margin: 10px auto;
     transition: all 1s ease;
+
 }
 #resultado:hover{
     width: 355px;
